@@ -11,4 +11,4 @@ lean_lib "scileandemo" where
 lean_exe "wave" where
   root := `WaveEquation
 
-require scilean from git "https://github.com/lecopivo/SciLean" @ "e81643b00eaf17fc15f8580738bd14422cf3199d"
+require scilean from git "https://github.com/lecopivo/SciLean" @ "6c24c945bfb8755b64521eb73614cf0655df13e5"

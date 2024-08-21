@@ -397,15 +397,15 @@ def foo (x : ℝ) := x * exp x
   autodiff
 
 -- define new function transformation with `def_fun_trans`
--- def_fun_trans : fderiv ℝ foo by unfold foo; autodiff
+def_fun_trans : fderiv ℝ foo by unfold foo; autodiff
 
 -- check the new definition and theorem
--- #print foo.arg_x.fderiv
--- #check foo.arg_x.fderiv_rule
+#print foo.arg_x.fderiv
+#check foo.arg_x.fderiv_rule
 
 -- define function transformations for forward and reverse mode AD
--- def_fun_trans : ∂> foo by unfold foo; autodiff
--- def_fun_trans : <∂ foo by unfold foo; autodiff
+def_fun_trans : ∂> foo by unfold foo; autodiff
+def_fun_trans : <∂ foo by unfold foo; autodiff
 
 -- `∇ foo`, `deriv foo` and `∂ foo` do not work as they are not merked as function transformations
 -- def_fun_trans : ∇ foo by unfold foo; autodiff
