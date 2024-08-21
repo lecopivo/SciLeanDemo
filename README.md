@@ -8,6 +8,7 @@ cd SciLeanDemo
 lake exe cache get
 lake build scileandemo wave
 ```
+the last two commands might take several minutes to run especially the last one.
 
 Open `Main.lean` to follow the lecture.
 
