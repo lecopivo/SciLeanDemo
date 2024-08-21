@@ -13,7 +13,7 @@ Open `Main.lean` to follow the lecture.
 
 To run the wave example execute
 ```
-.lake/buid/bin/wave
+.lake/build/bin/wave
 ```
 
 
